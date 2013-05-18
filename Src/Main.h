@@ -15,3 +15,10 @@
 #include <new>
 
 #include <climits>
+
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+
+#include "Utility\Utility.h"
+#include "Utility\Vector2D.h"

@@ -85,6 +85,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Main.h" />
+    <ClInclude Include="..\..\Src\Shape\Rectangle.h" />
+    <ClInclude Include="..\..\Src\Shape\Shape.h" />
+    <ClInclude Include="..\..\Src\Utility\Utility.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
   </ItemGroup>
   <ItemGroup>

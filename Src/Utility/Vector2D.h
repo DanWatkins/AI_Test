@@ -54,6 +54,16 @@ public:
 	}
 
 	Vector2D<T> Reverse() { return Vector2D<T>(-x,-y); }
+
+
+	//operators
+	const Vector2D<T>& operator+=(const Vector2D<T> &rhs) { x += rhs.x; y += rhs.y; }
+	const Vector2D<T>& operator-=(const Vector2D<T> &rhs) { x -= rhs.x; y -= rhs.y; }
+	const Vector2D<T>& operator*=(const Vector2D<T> &rhs) { x *= rhs.x; y *= rhs.y; }
+	const Vector2D<T>& operator/=(const Vector2D<T> &rhs) { x /= rhs.x; y /= rhs.y; }
+
+	bool operator==(const Vector2D<T>& rhs) { return IsEqual(x,rhs.x) && IsEqual(y,rhs.y); }
+	bool operator!=(const Vector2D<T>& rhs) { return !IsEqual(x,rhs.x) || !IsEqual(y,rhs.y); }
 };
 
 #endif

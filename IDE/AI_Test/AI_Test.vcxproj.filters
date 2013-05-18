@@ -5,6 +5,15 @@
     <ClInclude Include="..\..\Src\Utility\Vector2D.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Shape\Rectangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Shape\Shape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -12,6 +21,9 @@
   <ItemGroup>
     <Filter Include="Utility">
       <UniqueIdentifier>{78e62760-62a8-4c9c-a68b-0ef2e029ce95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{240d6201-09b9-44c6-8bea-bb8dc0ccd3f7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
