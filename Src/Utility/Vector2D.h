@@ -1,7 +1,7 @@
+#include "..\Main.h"
+
 #ifndef _aitest_VECTOR2D_H
 #define _aitest_VECTOR2D_H
-
-#include "../Main.h"
 
 template <class T>
 class Vector2D

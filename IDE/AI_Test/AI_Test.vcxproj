@@ -84,16 +84,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Src\Entity\Entity.h" />
     <ClInclude Include="..\..\Src\Main.h" />
     <ClInclude Include="..\..\Src\Shape\Rectangle.h" />
     <ClInclude Include="..\..\Src\Shape\Shape.h" />
     <ClInclude Include="..\..\Src\Utility\Utility.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
+    <ClInclude Include="..\..\Src\World\Entity.h" />
+    <ClInclude Include="..\..\Src\World\World.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Src\Entity\Entity.cpp" />
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\World\Entity.cpp" />
+    <ClCompile Include="..\..\Src\World\World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,11 +1,11 @@
+#include "..\Main.h"
+
 #ifndef _aitest_SHAPE_H
 #define _aitest_SHAPE_H
 
-#include "..\Main.h"
-
 class Shape
 {
-private:
+protected:
 	sf::RenderWindow *mRenderWindow;
 	sf::Shape mShape;
 	Vector2D<double> mPos;
@@ -21,5 +21,4 @@ public:
 };
 
 #endif
-
 

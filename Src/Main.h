@@ -1,3 +1,6 @@
+#ifndef _aitest_MAIN_H
+#define _aitest_MAIN_H
+
 #include <iostream>
 
 #include <vector>
@@ -20,5 +23,19 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
+
+class Shape;
+struct Message;
+
+
 #include "Utility\Utility.h"
 #include "Utility\Vector2D.h"
+
+#include "Shape\Shape.h"
+#include "Shape\Rectangle.h"
+
+#include "World\Entity.h"
+#include "World\World.h"
+
+#endif
+
