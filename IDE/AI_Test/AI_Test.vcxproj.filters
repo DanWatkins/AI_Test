@@ -14,9 +14,13 @@
     <ClInclude Include="..\..\Src\Shape\Shape.h">
       <Filter>Shape</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\Entity\Entity.h">
+      <Filter>Enttiy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\Entity\Entity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utility">
@@ -24,6 +28,9 @@
     </Filter>
     <Filter Include="Shape">
       <UniqueIdentifier>{240d6201-09b9-44c6-8bea-bb8dc0ccd3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enttiy">
+      <UniqueIdentifier>{877dfb6b-8675-43d7-94ee-00c9b321e882}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

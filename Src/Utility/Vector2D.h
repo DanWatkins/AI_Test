@@ -12,12 +12,12 @@ public:
 	Vector2D() { Zero(); }
 	Vector2D(T x, T y) { this->x = x; this->y = y; }
 
-	void Zero() { x = T(0.0); y = T(0.0);
+	void Zero() { x = T(0.0); y = T(0.0); }
 
 
 	T Length() { return std::sqrt(x*x + y*y); }
 	T LengthSq() { return x*x + y*y; }
-	T LengthSqrt() { return std::sqrt(Length());
+	T LengthSqrt() { return std::sqrt(Length()); }
 
 	void Normalize()
 	{

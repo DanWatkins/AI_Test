@@ -84,6 +84,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Src\Entity\Entity.h" />
     <ClInclude Include="..\..\Src\Main.h" />
     <ClInclude Include="..\..\Src\Shape\Rectangle.h" />
     <ClInclude Include="..\..\Src\Shape\Shape.h" />
@@ -91,6 +92,7 @@
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Src\Entity\Entity.cpp" />
     <ClCompile Include="..\..\Src\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
