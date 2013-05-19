@@ -10,3 +10,14 @@ int main()
 
 	return 0;
 }
+
+
+bool ait::ClientInit()
+{
+	return false;
+}
+
+
+void ait::ClientLoop()
+{
+}

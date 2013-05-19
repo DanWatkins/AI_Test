@@ -28,14 +28,24 @@ class Shape;
 struct Message;
 
 
+#include "Constants.h"
 #include "Utility\Utility.h"
 #include "Utility\Vector2D.h"
+#include "Utility\String.h"
+#include "Utility\HML.h"
+#include "Utility\Timer.h"
+
+#include "System\VideoSettings.h"
+#include "System\Input.h"
+#include "System\Window.h"
 
 #include "Shape\Shape.h"
 #include "Shape\Rectangle.h"
 
 #include "World\Entity.h"
 #include "World\World.h"
+
+
 
 #endif
 

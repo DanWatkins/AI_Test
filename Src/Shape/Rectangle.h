@@ -3,21 +3,24 @@
 #ifndef _aitest_RECTANGLE_H
 #define _aitest_RECTANGLE_H
 
-class Rectangle : public Shape
+namespace ait
 {
-public:
-	Rectangle(Vector2D<double> pos, double width, double height)
+	class Rectangle : public Shape
 	{
-		mShape = sf::Shape::Rectangle((float)pos.x, (float)pos.y,
-										(float)(pos.x+width), (float)(pos.y+height),
-										sf::Color(0,0,0,255));
-		SetPos(pos);
-	}
+	public:
+		Rectangle(Vector2D<double> pos, double width, double height)
+		{
+			mShape = sf::Shape::Rectangle((float)pos.x, (float)pos.y,
+											(float)(pos.x+width), (float)(pos.y+height),
+											sf::Color(0,0,0,255));
+			SetPos(pos);
+		}
 
-	void Draw()
-	{
+		void Draw()
+		{
 
-	}
+		}
+	};
 };
 
 #endif

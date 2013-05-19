@@ -20,6 +20,25 @@
     <ClInclude Include="..\..\Src\World\World.h">
       <Filter>World</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\System\Window.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Input.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\VideoSettings.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\String.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\HML.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Constants.h" />
+    <ClInclude Include="..\..\Src\Utility\Timer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -28,6 +47,21 @@
     </ClCompile>
     <ClCompile Include="..\..\Src\World\World.cpp">
       <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\System\Window.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\System\Input.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utility\String.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utility\HML.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utility\Utility.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +73,9 @@
     </Filter>
     <Filter Include="World">
       <UniqueIdentifier>{877dfb6b-8675-43d7-94ee-00c9b321e882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{a8fd449c-f881-4f7e-a4e1-083e405c4356}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
