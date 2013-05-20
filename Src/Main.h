@@ -46,6 +46,9 @@ struct Message;
 #include "World\World.h"
 
 
+const ait::String APP_UID = "AI_Test";
+
+
 
 #endif
 

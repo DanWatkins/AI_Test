@@ -1,14 +1,31 @@
 #include "Main.h"
 
-sf::RenderWindow *app;
+using namespace ait;
+Window *app;
 
 int main()
 {
-	std::cout << "AI_Test" << std::endl;
-	
-	app = new sf::RenderWindow(sf::VideoMode(800, 600, 32), "AI_Test");
+	app = new Window();
+	app->Init(APP_UID);
+	app->SetBackgroundColor(gGray);
+	ClientInit();
 
-	return 0;
+	while (!app->GetQuit())
+	{
+		app->Update();
+
+		if (app->GetWindow()->GetEvent(*app->GetInput()->GetEvent()))
+		{
+			if (app->GetInput()->GetEvent()->Type == sf::Event::Closed)
+				app->SetQuit(true);
+			else if (app->GetInput()->GetKeyState(GK_Escape, KEY_DOWN))
+				app->SetQuit(true);
+		}
+	}
+
+	app->Shutdown();
+
+	return EXIT_SUCCESS;
 }
 
 
