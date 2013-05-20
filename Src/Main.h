@@ -43,6 +43,8 @@ struct Message;
 #include "Shape\Rectangle.h"
 
 #include "World\Entity.h"
+#include "World\MovingEntity.h"
+#include "World\Vehicle.h"
 #include "World\World.h"
 
 

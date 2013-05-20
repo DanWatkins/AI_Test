@@ -97,6 +97,8 @@
     <ClInclude Include="..\..\Src\Utility\Utility.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
+    <ClInclude Include="..\..\Src\World\MovingEntity.h" />
+    <ClInclude Include="..\..\Src\World\Vehicle.h" />
     <ClInclude Include="..\..\Src\World\World.h" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +109,8 @@
     <ClCompile Include="..\..\Src\Utility\String.cpp" />
     <ClCompile Include="..\..\Src\Utility\Utility.cpp" />
     <ClCompile Include="..\..\Src\World\Entity.cpp" />
+    <ClCompile Include="..\..\Src\World\MovingEntity.cpp" />
+    <ClCompile Include="..\..\Src\World\Vehicle.cpp" />
     <ClCompile Include="..\..\Src\World\World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
