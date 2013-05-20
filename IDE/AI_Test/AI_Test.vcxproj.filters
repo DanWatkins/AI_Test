@@ -45,6 +45,9 @@
     <ClInclude Include="..\..\Src\World\Vehicle.h">
       <Filter>World</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\World\SteeringBehavior.h">
+      <Filter>World</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -73,6 +76,9 @@
       <Filter>World</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Src\World\Vehicle.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\World\SteeringBehavior.cpp">
       <Filter>World</Filter>
     </ClCompile>
   </ItemGroup>

@@ -42,9 +42,20 @@ struct Message;
 #include "Shape\Shape.h"
 #include "Shape\Rectangle.h"
 
+
+namespace ait
+{
+	class Entity;
+	class MovingEntity;
+	class Vehicle;
+	class SteeringBehavior;
+	class World;
+};
+
 #include "World\Entity.h"
 #include "World\MovingEntity.h"
 #include "World\Vehicle.h"
+#include "World\SteeringBehavior.h"
 #include "World\World.h"
 
 
