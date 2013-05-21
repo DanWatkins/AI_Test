@@ -39,14 +39,17 @@
     <ClInclude Include="..\..\Src\System\Utility.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Src\System\Vector2D.h">
-      <Filter>System</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Src\System\Shape\Shape.h">
       <Filter>System\Shape</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Src\System\Shape\Rectangle.h">
       <Filter>System\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\Vector2D.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\Path.h">
+      <Filter>Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +84,9 @@
     <ClCompile Include="..\..\Src\System\Utility.cpp">
       <Filter>System</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Src\Utility\Path.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="World">
@@ -91,6 +97,9 @@
     </Filter>
     <Filter Include="System\Shape">
       <UniqueIdentifier>{b55ff101-377b-4b70-9631-76e3233e4345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{37818359-e25a-43ff-8475-9d5e575b0ab2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -93,9 +93,10 @@
     <ClInclude Include="..\..\Src\System\String.h" />
     <ClInclude Include="..\..\Src\System\Timer.h" />
     <ClInclude Include="..\..\Src\System\Utility.h" />
-    <ClInclude Include="..\..\Src\System\Vector2D.h" />
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
     <ClInclude Include="..\..\Src\System\Window.h" />
+    <ClInclude Include="..\..\Src\Utility\Path.h" />
+    <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
     <ClInclude Include="..\..\Src\World\SteeringBehavior.h" />
@@ -109,6 +110,7 @@
     <ClCompile Include="..\..\Src\System\String.cpp" />
     <ClCompile Include="..\..\Src\System\Utility.cpp" />
     <ClCompile Include="..\..\Src\System\Window.cpp" />
+    <ClCompile Include="..\..\Src\Utility\Path.cpp" />
     <ClCompile Include="..\..\Src\World\Entity.cpp" />
     <ClCompile Include="..\..\Src\World\MovingEntity.cpp" />
     <ClCompile Include="..\..\Src\World\SteeringBehavior.cpp" />

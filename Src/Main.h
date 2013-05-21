@@ -30,10 +30,12 @@ struct Message;
 
 #include "Constants.h"
 #include "System\Utility.h"
-#include "System\Vector2D.h"
 #include "System\String.h"
 #include "System\HML.h"
 #include "System\Timer.h"
+
+#include "Utility\Vector2D.h"
+#include "Utility\Path.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"
