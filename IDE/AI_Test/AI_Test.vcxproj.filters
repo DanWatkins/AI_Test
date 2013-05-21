@@ -2,18 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="..\..\Src\Main.h" />
-    <ClInclude Include="..\..\Src\Utility\Vector2D.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Src\Utility\Utility.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Src\Shape\Rectangle.h">
-      <Filter>Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Src\Shape\Shape.h">
-      <Filter>Shape</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Src\World\Entity.h">
       <Filter>World</Filter>
     </ClInclude>
@@ -29,16 +17,7 @@
     <ClInclude Include="..\..\Src\System\VideoSettings.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Src\Utility\String.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Src\Utility\HML.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Src\Constants.h" />
-    <ClInclude Include="..\..\Src\Utility\Timer.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Src\World\MovingEntity.h">
       <Filter>World</Filter>
     </ClInclude>
@@ -47,6 +26,27 @@
     </ClInclude>
     <ClInclude Include="..\..\Src\World\SteeringBehavior.h">
       <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\HML.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\String.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Timer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Utility.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Vector2D.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Shape\Shape.h">
+      <Filter>System\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\Shape\Rectangle.h">
+      <Filter>System\Shape</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -63,15 +63,6 @@
     <ClCompile Include="..\..\Src\System\Input.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Src\Utility\String.cpp">
-      <Filter>Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Src\Utility\HML.cpp">
-      <Filter>Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Src\Utility\Utility.cpp">
-      <Filter>Utility</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Src\World\MovingEntity.cpp">
       <Filter>World</Filter>
     </ClCompile>
@@ -81,19 +72,25 @@
     <ClCompile Include="..\..\Src\World\SteeringBehavior.cpp">
       <Filter>World</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Src\System\HML.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\System\String.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\System\Utility.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Utility">
-      <UniqueIdentifier>{78e62760-62a8-4c9c-a68b-0ef2e029ce95}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shape">
-      <UniqueIdentifier>{240d6201-09b9-44c6-8bea-bb8dc0ccd3f7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="World">
       <UniqueIdentifier>{877dfb6b-8675-43d7-94ee-00c9b321e882}</UniqueIdentifier>
     </Filter>
     <Filter Include="System">
       <UniqueIdentifier>{a8fd449c-f881-4f7e-a4e1-083e405c4356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Shape">
+      <UniqueIdentifier>{b55ff101-377b-4b70-9631-76e3233e4345}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -86,16 +86,16 @@
   <ItemGroup>
     <ClInclude Include="..\..\Src\Constants.h" />
     <ClInclude Include="..\..\Src\Main.h" />
-    <ClInclude Include="..\..\Src\Shape\Rectangle.h" />
-    <ClInclude Include="..\..\Src\Shape\Shape.h" />
+    <ClInclude Include="..\..\Src\System\HML.h" />
     <ClInclude Include="..\..\Src\System\Input.h" />
+    <ClInclude Include="..\..\Src\System\Shape\Rectangle.h" />
+    <ClInclude Include="..\..\Src\System\Shape\Shape.h" />
+    <ClInclude Include="..\..\Src\System\String.h" />
+    <ClInclude Include="..\..\Src\System\Timer.h" />
+    <ClInclude Include="..\..\Src\System\Utility.h" />
+    <ClInclude Include="..\..\Src\System\Vector2D.h" />
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
     <ClInclude Include="..\..\Src\System\Window.h" />
-    <ClInclude Include="..\..\Src\Utility\HML.h" />
-    <ClInclude Include="..\..\Src\Utility\String.h" />
-    <ClInclude Include="..\..\Src\Utility\Timer.h" />
-    <ClInclude Include="..\..\Src\Utility\Utility.h" />
-    <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
     <ClInclude Include="..\..\Src\World\SteeringBehavior.h" />
@@ -104,11 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\System\HML.cpp" />
     <ClCompile Include="..\..\Src\System\Input.cpp" />
+    <ClCompile Include="..\..\Src\System\String.cpp" />
+    <ClCompile Include="..\..\Src\System\Utility.cpp" />
     <ClCompile Include="..\..\Src\System\Window.cpp" />
-    <ClCompile Include="..\..\Src\Utility\HML.cpp" />
-    <ClCompile Include="..\..\Src\Utility\String.cpp" />
-    <ClCompile Include="..\..\Src\Utility\Utility.cpp" />
     <ClCompile Include="..\..\Src\World\Entity.cpp" />
     <ClCompile Include="..\..\Src\World\MovingEntity.cpp" />
     <ClCompile Include="..\..\Src\World\SteeringBehavior.cpp" />

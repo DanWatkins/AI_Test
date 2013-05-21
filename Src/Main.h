@@ -29,18 +29,18 @@ struct Message;
 
 
 #include "Constants.h"
-#include "Utility\Utility.h"
-#include "Utility\Vector2D.h"
-#include "Utility\String.h"
-#include "Utility\HML.h"
-#include "Utility\Timer.h"
+#include "System\Utility.h"
+#include "System\Vector2D.h"
+#include "System\String.h"
+#include "System\HML.h"
+#include "System\Timer.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"
 #include "System\Window.h"
 
-#include "Shape\Shape.h"
-#include "Shape\Rectangle.h"
+#include "System\Shape\Shape.h"
+#include "System\Shape\Rectangle.h"
 
 
 namespace ait

@@ -1,4 +1,4 @@
-#include "..\Main.h"
+#include "..\..\Main.h"
 
 #ifndef _aitest_SHAPE_H
 #define _aitest_SHAPE_H
