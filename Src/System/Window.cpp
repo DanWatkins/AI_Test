@@ -1,4 +1,4 @@
-#include "..\Main.h"
+#include "Window.h"
 
 namespace ait
 {

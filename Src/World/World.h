@@ -8,10 +8,11 @@ namespace ait
 	class World
 	{
 	private:
-		std::vector< std::shared_ptr<Entity> > mEntities;
+		std::vector<Vehicle*> mVehicles;
+		std::vector<Entity*> mObstacles;
+		
 
-
-
+		bool mPaused;
 	};
 };
 

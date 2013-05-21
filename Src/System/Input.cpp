@@ -1,4 +1,4 @@
-#include "..\Main.h"
+#include "Input.h"
 
 namespace ait
 {
