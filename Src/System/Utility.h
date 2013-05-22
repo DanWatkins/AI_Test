@@ -64,6 +64,45 @@ namespace ait
 
 	template <class T>
 	T Max(T a, T b) { return a > b : a ? b; }
+
+
+	inline bool InRange(double start, double end, double value)
+	{
+		if (start < end)
+			return (value > start  &&  value < end);
+		else
+			return (value < start  &&  value > end);
+	}
+
+
+	inline int RandInt(int x, int y)
+	{
+		return rand() % (y-x+1)+x;
+	}
+
+
+	inline double RandFloat()
+	{
+		return rand() / (RAND_MAX+1.0);
+	}
+
+
+	inline double RandInRange(double x, double y)
+	{
+		return x + RandFloat() * (y-x);
+	}
+
+
+	inline bool RandBool()
+	{
+		return RandFloat() > 0.5;
+	}
+
+
+	inline double RandClamped()
+	{
+		return RandFloat() - RandFloat();
+	}
 }
 
 #endif

@@ -21,7 +21,10 @@ namespace ait
 
 		for (int n=0; n<wayPointCount; n++)
 		{
-			//TODO Finish implementing this, and the rest of the file
+			double radialDist = RandInRange(smaller*0.2f, smaller);
+
+			Vector2D<double> temp(radialDist, 0.0f);
+			//TODO Finish
 		}
 	}
 
