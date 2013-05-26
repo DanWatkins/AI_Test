@@ -22,9 +22,11 @@ namespace ait
 		for (int n=0; n<wayPointCount; n++)
 		{
 			double radialDist = RandInRange(smaller*0.2f, smaller);
-
 			Vector2D<double> temp(radialDist, 0.0f);
-			//TODO Finish
+			temp.x += midX;
+			temp.y += midY;
+
+			mWaypoints.push_back(temp);
 		}
 
 		return mWaypoints;
@@ -43,16 +45,28 @@ namespace ait
 	}
 
 
+	void Path::Draw()
+	{
+		//TODO implement
+	}
+
+
 	void Path::AddWaypoint(Vector2D<double> newWayPoint)
 	{
+		mWaypoints.push_back(newWayPoint);//TODO this was an implied implementation
 	}
 
 	Vector2D<double> Path::GetCurrentWaypoint()
 	{
-		return Vector2D<double>();//TODO finish
+		return *mCurrentWaypoint;
 	}
 
 	void Path::SetNextWaypoint()
 	{
+		if (++mCurrentWaypoint == mWaypoints.end())
+		{
+			if (mLooped)
+				mCurrentWaypoint = mWaypoints.begin();
+		}
 	}
 };
