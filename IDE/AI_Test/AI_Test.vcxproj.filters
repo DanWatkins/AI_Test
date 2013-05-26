@@ -57,6 +57,9 @@
     <ClInclude Include="..\..\Src\Utility\Transformation.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\World\Obstacle.h">
+      <Filter>World</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -98,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Src\Utility\Transformation.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\World\Obstacle.cpp">
+      <Filter>World</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

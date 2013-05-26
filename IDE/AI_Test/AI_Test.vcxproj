@@ -101,6 +101,7 @@
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
+    <ClInclude Include="..\..\Src\World\Obstacle.h" />
     <ClInclude Include="..\..\Src\World\SteeringBehavior.h" />
     <ClInclude Include="..\..\Src\World\Vehicle.h" />
     <ClInclude Include="..\..\Src\World\World.h" />
@@ -117,6 +118,7 @@
     <ClCompile Include="..\..\Src\Utility\Transformation.cpp" />
     <ClCompile Include="..\..\Src\World\Entity.cpp" />
     <ClCompile Include="..\..\Src\World\MovingEntity.cpp" />
+    <ClCompile Include="..\..\Src\World\Obstacle.cpp" />
     <ClCompile Include="..\..\Src\World\SteeringBehavior.cpp" />
     <ClCompile Include="..\..\Src\World\Vehicle.cpp" />
     <ClCompile Include="..\..\Src\World\World.cpp" />

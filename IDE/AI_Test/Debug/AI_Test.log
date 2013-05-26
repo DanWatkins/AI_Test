@@ -1,10 +1,11 @@
-﻿Build started 5/26/2013 12:23:23 PM.
-     1>Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 5/26/2013 12:53:23 PM.
+     1>Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D BUILD_WINDOWS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\Main.cpp ..\..\Src\System\HML.cpp ..\..\Src\System\Input.cpp ..\..\Src\System\String.cpp ..\..\Src\System\Utility.cpp ..\..\Src\System\Window.cpp ..\..\Src\Utility\MatrixC2D.cpp ..\..\Src\Utility\Path.cpp ..\..\Src\Utility\Transformation.cpp ..\..\Src\World\Entity.cpp ..\..\Src\World\MovingEntity.cpp ..\..\Src\World\SteeringBehavior.cpp ..\..\Src\World\Vehicle.cpp ..\..\Src\World\World.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D BUILD_WINDOWS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\Main.cpp ..\..\Src\System\HML.cpp ..\..\Src\System\Input.cpp ..\..\Src\System\String.cpp ..\..\Src\System\Utility.cpp ..\..\Src\System\Window.cpp ..\..\Src\Utility\MatrixC2D.cpp ..\..\Src\Utility\Path.cpp ..\..\Src\Utility\Transformation.cpp ..\..\Src\World\Entity.cpp ..\..\Src\World\MovingEntity.cpp ..\..\Src\World\Obstacle.cpp ..\..\Src\World\SteeringBehavior.cpp ..\..\Src\World\Vehicle.cpp ..\..\Src\World\World.cpp
          World.cpp
          Vehicle.cpp
          SteeringBehavior.cpp
+         Obstacle.cpp
          MovingEntity.cpp
          Entity.cpp
          Transformation.cpp
@@ -29,6 +30,7 @@
          Debug\Transformation.obj
          Debug\Entity.obj
          Debug\MovingEntity.obj
+         Debug\Obstacle.obj
          Debug\SteeringBehavior.obj
          Debug\Vehicle.obj
          Debug\World.obj
@@ -99,8 +101,8 @@
      1>sfml-graphics-s-d.lib(Sprite.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'sfml-graphics-s-d.lib(Sprite.obj)' or at 'C:\Dropbox\Dev\AI_Test\Bin\vc110.pdb'; linking object as if no debug info
      1>sfml-graphics-s-d.lib(View.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'sfml-graphics-s-d.lib(View.obj)' or at 'C:\Dropbox\Dev\AI_Test\Bin\vc110.pdb'; linking object as if no debug info
          AI_Test.vcxproj -> C:\Dropbox\Dev\AI_Test\IDE\AI_Test\..\..\Bin\AI_Test.exe
-     1>Done Building Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:15.56
+Time Elapsed 00:00:16.56

@@ -24,9 +24,17 @@
 #include <SFML/Graphics.hpp>
 
 
-class Shape;
-struct Message;
+namespace ait
+{
+	class Shape;
+	struct Message;
 
+	class Entity;
+	class MovingEntity;
+	class Vehicle;
+	class SteeringBehavior;
+	class World;
+};
 
 #include "Constants.h"
 #include "System\Utility.h"
@@ -46,18 +54,9 @@ struct Message;
 #include "System\Shape\Shape.h"
 #include "System\Shape\Rectangle.h"
 
-
-namespace ait
-{
-	class Entity;
-	class MovingEntity;
-	class Vehicle;
-	class SteeringBehavior;
-	class World;
-};
-
 #include "World\Entity.h"
 #include "World\MovingEntity.h"
+#include "World\Obstacle.h"
 #include "World\Vehicle.h"
 #include "World\SteeringBehavior.h"
 #include "World\World.h"
