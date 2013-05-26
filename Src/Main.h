@@ -40,7 +40,7 @@ namespace ait
 #include "System\Utility.h"
 #include "System\String.h"
 #include "System\HML.h"
-#include "System\Timer.h"
+#include "System\PrecisionTimer.h"
 
 #include "Utility\Vector2D.h"
 #include "Utility\MatrixC2D.h"

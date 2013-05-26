@@ -33,9 +33,6 @@
     <ClInclude Include="..\..\Src\System\String.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Src\System\Timer.h">
-      <Filter>System</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Src\System\Utility.h">
       <Filter>System</Filter>
     </ClInclude>
@@ -59,6 +56,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Src\World\Obstacle.h">
       <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\System\PrecisionTimer.h">
+      <Filter>System</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +105,7 @@
     <ClCompile Include="..\..\Src\World\Obstacle.cpp">
       <Filter>World</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Src\System\PrecisionTimer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="World">
