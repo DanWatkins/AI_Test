@@ -35,6 +35,8 @@ struct Message;
 #include "System\Timer.h"
 
 #include "Utility\Vector2D.h"
+#include "Utility\MatrixC2D.h"
+#include "Utility\Transformation.h"
 #include "Utility\Path.h"
 
 #include "System\VideoSettings.h"

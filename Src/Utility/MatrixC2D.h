@@ -33,7 +33,7 @@ namespace ait
 		void Translate(double x, double y);
 		void Scale(double xScale, double yScale);
 		void Rotate(double rotation);
-		void Rotate(Vector2D<double> &fwd, Vector2D<double> &side);
+		void Rotate(const Vector2D<double> &fwd, const Vector2D<double> &side);
 		void TransformVector2Ds(std::vector< Vector2D<double> > &points);
 		void TransformVector2D(Vector2D<double> &point);
 		

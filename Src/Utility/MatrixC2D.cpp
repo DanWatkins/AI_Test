@@ -71,7 +71,7 @@ namespace ait
 	}
 
 
-	void MatrixC2D::Rotate(Vector2D<double> &fwd, Vector2D<double> &side)
+	void MatrixC2D::Rotate(const Vector2D<double> &fwd, const Vector2D<double> &side)
 	{
 		Matrix tempMatrix;
 
@@ -93,7 +93,7 @@ namespace ait
 	void MatrixC2D::TransformVector2D(Vector2D<double> &point)
 	{
 		double tempX = (mMatrix._11 * point.x) + (mMatrix._21 * point.y) + mMatrix._31;
-		double tempY = (mMatrix._12 * point.x) _ (mMatrix._22 * point.y) + mMatrix._32;
+		double tempY = (mMatrix._12 * point.x) + (mMatrix._22 * point.y) + mMatrix._32;
 
 		point.x = tempX;
 		point.y = tempY;

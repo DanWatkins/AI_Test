@@ -59,13 +59,56 @@ namespace ait
 
 
 		//operators
-		const Vector2D<T>& operator+=(const Vector2D<T> &rhs) { x += rhs.x; y += rhs.y; }
-		const Vector2D<T>& operator-=(const Vector2D<T> &rhs) { x -= rhs.x; y -= rhs.y; }
-		const Vector2D<T>& operator*=(const Vector2D<T> &rhs) { x *= rhs.x; y *= rhs.y; }
-		const Vector2D<T>& operator/=(const Vector2D<T> &rhs) { x /= rhs.x; y /= rhs.y; }
+		const Vector2D<T>& operator+=(const Vector2D<T> &rhs) { x += rhs.x; y += rhs.y; return *this;}
+		const Vector2D<T>& operator-=(const Vector2D<T> &rhs) { x -= rhs.x; y -= rhs.y; return *this; }
+		const Vector2D<T>& operator*=(const double &rhs) { x *= rhs; y *= rhs; return *this; }
+		const Vector2D<T>& operator/=(const double &rhs) { x /= rhs; y /= rhs; return *this; }
 
 		bool operator==(const Vector2D<T>& rhs) { return IsEqual(x,rhs.x) && IsEqual(y,rhs.y); }
 		bool operator!=(const Vector2D<T>& rhs) { return !IsEqual(x,rhs.x) || !IsEqual(y,rhs.y); }
+
+		Vector2D<T> operator+(const Vector2D<T> &rhs)
+		{
+			Vector2D<T> result(*this);
+			result.x += rhs.x;
+			result.y += rhs.y;
+
+			return result;
+		}
+
+		Vector2D<T> operator-(const Vector2D<T> &rhs)
+		{
+			Vector2D<T> result(*this);
+			result.x -= rhs.x;
+			result.y -= rhs.y;
+
+			return result;
+		}
+
+		Vector2D<T> operator*(double rhs)
+		{
+			Vector2D<T> result(*this);
+			result *= rhs;
+			
+			return result;
+		}
+
+		Vector2D<T> operator*(Vector2D<T> &rhs)
+		{
+			Vector2D<T> result(rhs);
+			result *= *this;
+
+			return result;
+		}
+
+		Vector2D<T> operator/(double rhs)
+		{
+			Vector2D<T> result(*this);
+			result.x /= rhs;
+			result.y /= rhs;
+
+			return result;
+		}
 	};
 };
 

@@ -26,6 +26,8 @@ namespace ait
 			Vector2D<double> temp(radialDist, 0.0f);
 			//TODO Finish
 		}
+
+		return mWaypoints;
 	}
 
 	void Path::Set(std::list< Vector2D<double> > newPath)
@@ -47,7 +49,7 @@ namespace ait
 
 	Vector2D<double> Path::GetCurrentWaypoint()
 	{
-
+		return Vector2D<double>();//TODO finish
 	}
 
 	void Path::SetNextWaypoint()

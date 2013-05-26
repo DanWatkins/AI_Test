@@ -60,10 +60,10 @@ namespace ait
 
 
 	template <class T>
-	T Min(T a, T b) { return a < b : a ? b; }
+	T Min(T a, T b) { return a < b ? a : b; }
 
 	template <class T>
-	T Max(T a, T b) { return a > b : a ? b; }
+	T Max(T a, T b) { return a > b ? a : b; }
 
 
 	inline bool InRange(double start, double end, double value)
