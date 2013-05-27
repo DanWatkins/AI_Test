@@ -63,6 +63,9 @@
     <ClInclude Include="..\..\Src\Utility\Geometry.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\System\Smoother.h">
+      <Filter>System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />

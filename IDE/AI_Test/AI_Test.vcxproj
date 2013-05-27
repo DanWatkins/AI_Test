@@ -91,6 +91,7 @@
     <ClInclude Include="..\..\Src\System\PrecisionTimer.h" />
     <ClInclude Include="..\..\Src\System\Shape\Rectangle.h" />
     <ClInclude Include="..\..\Src\System\Shape\Shape.h" />
+    <ClInclude Include="..\..\Src\System\Smoother.h" />
     <ClInclude Include="..\..\Src\System\String.h" />
     <ClInclude Include="..\..\Src\System\Utility.h" />
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
