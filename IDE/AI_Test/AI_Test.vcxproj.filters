@@ -60,6 +60,9 @@
     <ClInclude Include="..\..\Src\System\PrecisionTimer.h">
       <Filter>System</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\Geometry.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -105,7 +108,9 @@
     <ClCompile Include="..\..\Src\World\Obstacle.cpp">
       <Filter>World</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Src\System\PrecisionTimer.cpp" />
+    <ClCompile Include="..\..\Src\System\PrecisionTimer.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="World">

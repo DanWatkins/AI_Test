@@ -46,6 +46,7 @@ namespace ait
 #include "Utility\MatrixC2D.h"
 #include "Utility\Transformation.h"
 #include "Utility\Path.h"
+#include "Utility\Geometry.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"

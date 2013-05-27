@@ -1,27 +1,13 @@
-﻿Build started 5/26/2013 12:53:23 PM.
+﻿Build started 5/27/2013 3:32:52 PM.
      1>Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D BUILD_WINDOWS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\Main.cpp ..\..\Src\System\HML.cpp ..\..\Src\System\Input.cpp ..\..\Src\System\String.cpp ..\..\Src\System\Utility.cpp ..\..\Src\System\Window.cpp ..\..\Src\Utility\MatrixC2D.cpp ..\..\Src\Utility\Path.cpp ..\..\Src\Utility\Transformation.cpp ..\..\Src\World\Entity.cpp ..\..\Src\World\MovingEntity.cpp ..\..\Src\World\Obstacle.cpp ..\..\Src\World\SteeringBehavior.cpp ..\..\Src\World\Vehicle.cpp ..\..\Src\World\World.cpp
-         World.cpp
-         Vehicle.cpp
-         SteeringBehavior.cpp
-         Obstacle.cpp
-         MovingEntity.cpp
-         Entity.cpp
-         Transformation.cpp
-         Path.cpp
-         MatrixC2D.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D BUILD_WINDOWS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\System\Window.cpp
          Window.cpp
-         Utility.cpp
-         String.cpp
-         Input.cpp
-         HML.cpp
-         Main.cpp
-         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Bin\AI_Test.exe" /INCREMENTAL /NOLOGO "sfml-system-s-d.lib" "sfml-window-s-d.lib" "sfml-graphics-s-d.lib" "sfml-audio-s-d.lib" "sfml-network-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\Bin\AI_Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Bin\AI_Test.lib" /MACHINE:X86 Debug\Main.obj
          Debug\HML.obj
          Debug\Input.obj
+         Debug\PrecisionTimer.obj
          Debug\String.obj
          Debug\Utility.obj
          Debug\Window.obj
@@ -105,4 +91,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:16.56
+Time Elapsed 00:00:02.30

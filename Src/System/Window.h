@@ -19,7 +19,6 @@ namespace ait
         Color mBackgroundColor;								//color to clear the back buffer to
         Input mInput;										//input manager
 
-		Timer mClock;										//keeps the update rate
 		double mUpdateRate;									//minimum length for a clock cycle (int milli-seconds)
 		double mLastUpdateTime;								//time it took for the last update to complete (in milli-seconds)
 

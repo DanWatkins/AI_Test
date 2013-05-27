@@ -95,6 +95,7 @@
     <ClInclude Include="..\..\Src\System\Utility.h" />
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
     <ClInclude Include="..\..\Src\System\Window.h" />
+    <ClInclude Include="..\..\Src\Utility\Geometry.h" />
     <ClInclude Include="..\..\Src\Utility\MatrixC2D.h" />
     <ClInclude Include="..\..\Src\Utility\Path.h" />
     <ClInclude Include="..\..\Src\Utility\Transformation.h" />

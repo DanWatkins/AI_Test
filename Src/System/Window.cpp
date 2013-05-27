@@ -130,9 +130,6 @@ namespace ait
 		mWindow.Display();
 		mWindow.Clear(mBackgroundColor.Get());
 
-		mLastUpdateTime = mClock.GetTimeAndEnd();
-		mClock.Start();
-
 		//check if @mVideoSetting has changed, but not been applied
 		if (mVideoSettings != mLastVideoSettings)
 			mVideoSettings = mLastVideoSettings;
