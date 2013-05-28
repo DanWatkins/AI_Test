@@ -101,6 +101,7 @@
     <ClInclude Include="..\..\Src\Utility\Path.h" />
     <ClInclude Include="..\..\Src\Utility\Transformation.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
+    <ClInclude Include="..\..\Src\Utility\Wall2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
     <ClInclude Include="..\..\Src\World\Obstacle.h" />
@@ -119,6 +120,7 @@
     <ClCompile Include="..\..\Src\Utility\MatrixC2D.cpp" />
     <ClCompile Include="..\..\Src\Utility\Path.cpp" />
     <ClCompile Include="..\..\Src\Utility\Transformation.cpp" />
+    <ClCompile Include="..\..\Src\Utility\Wall2D.cpp" />
     <ClCompile Include="..\..\Src\World\Entity.cpp" />
     <ClCompile Include="..\..\Src\World\MovingEntity.cpp" />
     <ClCompile Include="..\..\Src\World\Obstacle.cpp" />

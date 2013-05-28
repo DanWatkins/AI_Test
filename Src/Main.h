@@ -41,12 +41,14 @@ namespace ait
 #include "System\String.h"
 #include "System\HML.h"
 #include "System\PrecisionTimer.h"
+#include "System\Smoother.h"
 
 #include "Utility\Vector2D.h"
 #include "Utility\MatrixC2D.h"
 #include "Utility\Transformation.h"
 #include "Utility\Path.h"
 #include "Utility\Geometry.h"
+#include "Utility\Wall2D.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"

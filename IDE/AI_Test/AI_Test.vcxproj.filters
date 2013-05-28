@@ -66,6 +66,9 @@
     <ClInclude Include="..\..\Src\System\Smoother.h">
       <Filter>System</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\Wall2D.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
@@ -113,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Src\System\PrecisionTimer.cpp">
       <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utility\Wall2D.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
