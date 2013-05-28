@@ -87,11 +87,13 @@
     <ClInclude Include="..\..\Src\Constants.h" />
     <ClInclude Include="..\..\Src\Main.h" />
     <ClInclude Include="..\..\Src\System\HML.h" />
+    <ClInclude Include="..\..\Src\System\IniFileLoaderBase.h" />
     <ClInclude Include="..\..\Src\System\Input.h" />
     <ClInclude Include="..\..\Src\System\PrecisionTimer.h" />
     <ClInclude Include="..\..\Src\System\Shape\Rectangle.h" />
     <ClInclude Include="..\..\Src\System\Shape\Shape.h" />
     <ClInclude Include="..\..\Src\System\Smoother.h" />
+    <ClInclude Include="..\..\Src\System\StreamUtilityFunctions.h" />
     <ClInclude Include="..\..\Src\System\String.h" />
     <ClInclude Include="..\..\Src\System\Utility.h" />
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
@@ -112,6 +114,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
     <ClCompile Include="..\..\Src\System\HML.cpp" />
+    <ClCompile Include="..\..\Src\System\IniFileLoaderBase.cpp" />
     <ClCompile Include="..\..\Src\System\Input.cpp" />
     <ClCompile Include="..\..\Src\System\PrecisionTimer.cpp" />
     <ClCompile Include="..\..\Src\System\String.cpp" />

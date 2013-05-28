@@ -37,11 +37,13 @@ namespace ait
 };
 
 #include "Constants.h"
+#include "System\StreamUtilityFunctions.h"
 #include "System\Utility.h"
 #include "System\String.h"
 #include "System\HML.h"
 #include "System\PrecisionTimer.h"
 #include "System\Smoother.h"
+#include "System\IniFileLoaderBase.h"
 
 #include "Utility\Vector2D.h"
 #include "Utility\MatrixC2D.h"
