@@ -64,11 +64,10 @@ namespace ait
 #include "World\Obstacle.h"
 #include "World\Vehicle.h"
 #include "World\SteeringBehavior.h"
+#include "World\EntityFunctionTemplates.h"
 #include "World\World.h"
 
-
 const ait::String APP_UID = "AI_Test";
-
 
 
 #endif

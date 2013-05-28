@@ -44,7 +44,8 @@ namespace ait
 		file.open(filename);
 
 		if (!file){m_bGoodFile = false;}
-	  };
+		};
+	};
 
 };
 

@@ -75,6 +75,12 @@
     <ClInclude Include="..\..\Src\System\IniFileLoaderBase.h">
       <Filter>System</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\World\EntityFunctionTemplates.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utility\InvertedAABBox2D.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />

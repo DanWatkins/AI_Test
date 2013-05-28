@@ -99,12 +99,14 @@
     <ClInclude Include="..\..\Src\System\VideoSettings.h" />
     <ClInclude Include="..\..\Src\System\Window.h" />
     <ClInclude Include="..\..\Src\Utility\Geometry.h" />
+    <ClInclude Include="..\..\Src\Utility\InvertedAABBox2D.h" />
     <ClInclude Include="..\..\Src\Utility\MatrixC2D.h" />
     <ClInclude Include="..\..\Src\Utility\Path.h" />
     <ClInclude Include="..\..\Src\Utility\Transformation.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\Utility\Wall2D.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
+    <ClInclude Include="..\..\Src\World\EntityFunctionTemplates.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
     <ClInclude Include="..\..\Src\World\Obstacle.h" />
     <ClInclude Include="..\..\Src\World\SteeringBehavior.h" />

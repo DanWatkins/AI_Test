@@ -2,6 +2,8 @@
 
 namespace ait
 {
+	using namespace std;
+
 	//removes any commenting from a line of text
 	void RemoveCommentingFromLine(string& line)
 	{

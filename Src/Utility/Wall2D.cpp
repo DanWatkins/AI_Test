@@ -53,7 +53,7 @@ namespace ait
 		SetFrom(Vector2D<double>(x,y));
 
 		in >> x >> y;
-		SetTo(Vector2D<double>(x,y);
+		SetTo(Vector2D<double>(x,y));
 
 		in >> x >> y;
 		SetNormal(Vector2D<double>(x,y));
