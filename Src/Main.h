@@ -51,6 +51,7 @@ namespace ait
 #include "Utility\Path.h"
 #include "Utility\Geometry.h"
 #include "Utility\Wall2D.h"
+#include "Utility\InvertedAABBox2D.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"
@@ -66,6 +67,7 @@ namespace ait
 #include "World\SteeringBehavior.h"
 #include "World\EntityFunctionTemplates.h"
 #include "World\World.h"
+#include "World\CellSpacePartition.h"
 
 const ait::String APP_UID = "AI_Test";
 

@@ -105,6 +105,7 @@
     <ClInclude Include="..\..\Src\Utility\Transformation.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
     <ClInclude Include="..\..\Src\Utility\Wall2D.h" />
+    <ClInclude Include="..\..\Src\World\CellSpacePartition.h" />
     <ClInclude Include="..\..\Src\World\Entity.h" />
     <ClInclude Include="..\..\Src\World\EntityFunctionTemplates.h" />
     <ClInclude Include="..\..\Src\World\MovingEntity.h" />
