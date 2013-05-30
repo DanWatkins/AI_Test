@@ -102,7 +102,7 @@ namespace ait
 		bool AccumulateForce(Vector2D<double> &sf, Vector2D<double> forceToAdd);
 		void CreateFeelers();
 
-
+		//TODO all these private methods are going to need a '_' prefix or should be made public
 		//behavior methods
 		Vector2D<double> Seek(Vector2D<double> targetPos);
 		Vector2D<double> Flee(Vector2D<double> targetPos);
