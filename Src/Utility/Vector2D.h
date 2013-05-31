@@ -76,6 +76,16 @@ namespace ait
 			return result;
 		}
 
+
+		Vector2D<T> operator+(const double &rhs)
+		{
+			Vector2D<T> result(*this);
+			result.x += rhs;
+			result.y += rhs;
+
+			return result;
+		}
+
 		Vector2D<T> operator-(const Vector2D<T> &rhs)
 		{
 			Vector2D<T> result(*this);

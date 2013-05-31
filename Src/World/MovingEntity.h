@@ -31,6 +31,8 @@ namespace ait
 		double GetMass() { return mMass; }
 		void SetMaxSpeed(double maxSpeed) { mMaxSpeed = maxSpeed; }
 		double GetMaxSpeed() { return mMaxSpeed; }
+		double GetSpeed() { return mVelocity.Length(); }
+		double GetSpeedSq() { return mVelocity.LengthSq(); }
 		void SetMaxForce(double maxForce) { mMaxForce = maxForce; }
 		double GetMaxForce() { return mMaxForce; }
 		void SetMaxTurnRate(double maxTurnRate) { mMaxTurnRate = maxTurnRate; }

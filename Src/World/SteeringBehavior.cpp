@@ -30,7 +30,7 @@ namespace ait
 
 
 	/*=============================================================================
-	-- 
+	-- Creates the feelers (antenna) used by WallAvoidance.
 	=============================================================================*/
 	void SteeringBehavior::CreateFeelers()
 	{
@@ -38,16 +38,16 @@ namespace ait
 		
 		Vector2D<double> temp = mVehicle->GetHeading();
 		Vec2DRotateAroundOrigin(temp, PI/2.0 * 3.5);
-		mFeelers[1] = (mVehicle->GetPos() + mWallDetectionFeelerLength/2.0) * temp;
+		mFeelers[1] = mVehicle->GetPos() + temp * mWallDetectionFeelerLength/2.0;//TODO right order here??
 
 		temp = mVehicle->GetHeading();
 		Vec2DRotateAroundOrigin(temp, PI/4.0);
-		mFeelers[2] = (mVehicle->GetPos() + mWallDetectionFeelerLength/2.0) * temp;
+		mFeelers[2] = (mVehicle->GetPos() + temp * mWallDetectionFeelerLength/2.0);//TODO right order here??
 	}
 
 
 	/*=============================================================================
-	-- 
+	-- Returns a steering force that directs the agent towards the targetPos.
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Seek(Vector2D<double> targetPos)
 	{
@@ -60,7 +60,7 @@ namespace ait
 
 
 	/*=============================================================================
-	-- 
+	-- Returns a steering force that directs the agent away from the targetPos.
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Flee(Vector2D<double> targetPos)
 	{
@@ -83,14 +83,39 @@ namespace ait
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Arrive(Vector2D<double> targetPos, Deceleration deceleration)
 	{
+		Vector2D<double> toTarget = targetPos - mVehicle->GetPos();
+		
+		double distance = toTarget.Length();
+
+		if (distance > 0)
+		{
+			const double decelerationTweaker = 0.3;
+			double speed = distance / ((double)deceleration * decelerationTweaker);
+			speed = Min(speed, mVehicle->GetMaxSpeed());
+
+			Vector2D<double> desiredVelocity = toTarget * speed / distance;
+
+			return desiredVelocity - mVehicle->GetVelocity();
+		}
+
+		return Vector2D<double>(0,0);
 	}
 
 
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Pursuit(const Vehicle *agent)
+	Vector2D<double> SteeringBehavior::Pursuit(Vehicle *evader)
 	{
+		Vector2D<double> toEvader = evader->GetPos() - mVehicle->GetPos();
+		double relativeHeading = mVehicle->GetHeading().DotProduct(evader->GetHeading());
+
+		if (toEvader.DotProduct(mVehicle->GetHeading()) > 0  &&  relativeHeading < -0.95)
+			return Seek(evader->GetPos());
+
+		double lookAheadTime = toEvader.Length() / mVehicle->GetMaxSpeed() + evader->GetSpeed();
+
+		return Seek(evader->GetPos() + evader->GetVelocity() * lookAheadTime);
 	}
 
 

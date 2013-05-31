@@ -29,25 +29,25 @@ namespace ait
 		};
 
 	private:
-		enum BehaviorType
+		enum Behavior
 		{
-			None				= 0x00000,
-			Seek				= 0x00002,
-			Flee				= 0x00004,
-			Arrive				= 0x00008,
-			Wander				= 0x00010,
-			Cohesion			= 0x00020,
-			Separation			= 0x00040,
-			Allignment			= 0x00080,
-			ObstacleAvoidance	= 0x00100,
-			WallAvoidance		= 0x00200,
-			FollowPath			= 0x00400,
-			Pursuit				= 0x00800,
-			Evade				= 0x01000,
-			Interpose			= 0x02000,
-			Hide				= 0x04000,
-			Flock				= 0x08000,
-			OffsetPursuit		= 0x10000
+			BehaviorNone				= 0x00000,
+			BehaviorSeek				= 0x00002,
+			BehaviorFlee				= 0x00004,
+			BehaviorArrive				= 0x00008,
+			BehaviorWander				= 0x00010,
+			BehaviorCohesion			= 0x00020,
+			BehaviorSeparation			= 0x00040,
+			BehaviorAllignment			= 0x00080,
+			BehaviorObstacleAvoidance	= 0x00100,
+			BehaviorWallAvoidance		= 0x00200,
+			BehaviorFollowPath			= 0x00400,
+			BehaviorPursuit				= 0x00800,
+			BehaviorEvade				= 0x01000,
+			BehaviorInterpose			= 0x02000,
+			BehaviorHide				= 0x04000,
+			BehaviorFlock				= 0x08000,
+			BehaviorOffsetPursuit		= 0x10000
 		};
 
 		Vehicle *mVehicle;
@@ -98,7 +98,7 @@ namespace ait
 		SummingMethod mSummingMethod;
 
 		//methods
-		bool On(BehaviorType behaviorType) { return (mFlags & behaviorType) == behaviorType; }
+		bool On(Behavior behavior) { return (mFlags & behavior) == behavior; }
 		bool AccumulateForce(Vector2D<double> &sf, Vector2D<double> forceToAdd);
 		void CreateFeelers();
 
@@ -107,7 +107,7 @@ namespace ait
 		Vector2D<double> Seek(Vector2D<double> targetPos);
 		Vector2D<double> Flee(Vector2D<double> targetPos);
 		Vector2D<double> Arrive(Vector2D<double> targetPos, Deceleration deceleration);
-		Vector2D<double> Pursuit(const Vehicle *agent);
+		Vector2D<double> Pursuit(Vehicle *evader);
 		Vector2D<double> OffsetPursuit(const Vehicle *agent, const Vector2D<double> offset);
 		Vector2D<double> Evade(const Vehicle *agent);
 		Vector2D<double> Wander();
