@@ -124,6 +124,21 @@ namespace ait
 		Vector2D<double> CohesionPlus(std::vector<Vehicle*> &agents);
 		Vector2D<double> SeparationPlus(std::vector<Vehicle*> &agents);
 		Vector2D<double> AlignmentPlus(std::vector<Vehicle*> &agents);
+
+
+		Vector2D<double> CalculateWeightedSum();
+		Vector2D<double> CalculatePrioritized();
+		Vector2D<double> CalculateDithered();
+
+		Vector2D<double> GetHidingPosition(Vector2D<double> posOb, double radiusOb, Vector2D<double> posHunter);
+
+	public:
+		SteeringBehavior(Vehicle *agent);
+		virtual ~SteeringBehavior();
+
+		Vector2D<double> Calculate();
+
+		double ForwardComponent();
 	};
 };
 

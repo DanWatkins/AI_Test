@@ -18,7 +18,8 @@ namespace ait
 		double mMaxTurnRate;
 
 	public:
-		MovingEntity();
+		MovingEntity(Vector2D<double> pos, double radius, Vector2D<double> velocity, double maxSpeed,
+					Vector2D<double> heading, double mass, Vector2D<double> scale, double turnRate, double maxForce);
 
 		void SetVelocity(Vector2D<double> velocity) { mVelocity = velocity; }
 		Vector2D<double> GetVelocity() { return mVelocity; }

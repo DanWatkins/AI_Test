@@ -2,6 +2,24 @@
 
 namespace ait
 {
+	SteeringBehavior::SteeringBehavior(Vehicle *agent)
+	{
+	}
+
+
+	SteeringBehavior::~SteeringBehavior()
+	{
+	}
+
+	Vector2D<double> SteeringBehavior::Calculate()
+	{
+	}
+
+	double SteeringBehavior::ForwardComponent()
+	{
+	}
+
+
 	/*=============================================================================
 	-- Calculates how much of its maximum steering force the vehicle has left to
 	   apply and then applies that amount of the force to add.
