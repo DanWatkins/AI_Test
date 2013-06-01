@@ -1,44 +1,5 @@
-﻿Build started 5/31/2013 9:48:51 AM.
-     1>Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D BUILD_WINDOWS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\Main.cpp ..\..\Src\System\HML.cpp ..\..\Src\System\IniFileLoaderBase.cpp ..\..\Src\System\Input.cpp ..\..\Src\System\PrecisionTimer.cpp ..\..\Src\System\String.cpp ..\..\Src\System\Utility.cpp ..\..\Src\System\Window.cpp ..\..\Src\Utility\MatrixC2D.cpp ..\..\Src\Utility\Path.cpp ..\..\Src\Utility\Transformation.cpp ..\..\Src\Utility\Wall2D.cpp ..\..\Src\World\Entity.cpp ..\..\Src\World\MovingEntity.cpp ..\..\Src\World\Obstacle.cpp ..\..\Src\World\SteeringBehavior.cpp ..\..\Src\World\Vehicle.cpp ..\..\Src\World\World.cpp
-         SteeringBehavior.cpp
-     1>c:\dropbox\dev\ai_test\src\system\inifileloaderbase.h(32): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-         Generating Code...
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(127): error C4716: 'ait::SteeringBehavior::OffsetPursuit' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(135): error C4716: 'ait::SteeringBehavior::Evade' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(143): error C4716: 'ait::SteeringBehavior::Wander' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(151): error C4716: 'ait::SteeringBehavior::ObstacleAvoidance' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(159): error C4716: 'ait::SteeringBehavior::WallAvoidance' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(167): error C4716: 'ait::SteeringBehavior::FollowPath' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(175): error C4716: 'ait::SteeringBehavior::Interpose' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(183): error C4716: 'ait::SteeringBehavior::Hide' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(191): error C4716: 'ait::SteeringBehavior::Cohesion' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(199): error C4716: 'ait::SteeringBehavior::Separation' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(215): error C4716: 'ait::SteeringBehavior::CohesionPlus' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(223): error C4716: 'ait::SteeringBehavior::SeparationPlus' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(207): error C4716: 'ait::SteeringBehavior::Alignment' : must return a value
-     1>c:\dropbox\dev\ai_test\src\world\steeringbehavior.cpp(231): error C4716: 'ait::SteeringBehavior::AlignmentPlus' : must return a value
-         Skipping... (no relevant changes detected)
-         World.cpp
-         Vehicle.cpp
-         Obstacle.cpp
-         MovingEntity.cpp
-         Entity.cpp
-         Wall2D.cpp
-         Transformation.cpp
-         Path.cpp
-         MatrixC2D.cpp
-         Window.cpp
-         Utility.cpp
-         String.cpp
-         PrecisionTimer.cpp
-         Input.cpp
-         IniFileLoaderBase.cpp
-         HML.cpp
-         Main.cpp
-     1>Done Building Project "C:\Dropbox\Dev\AI_Test\IDE\AI_Test\AI_Test.vcxproj" (Build target(s)) -- FAILED.
+﻿Build started 6/1/2013 3:42:00 PM.
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.51
+Time Elapsed 00:00:00.04

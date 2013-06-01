@@ -6,16 +6,16 @@
 namespace ait
 {
 	//the radius of the constraining circle for the wander behavior
-	const double gWanderRadius = 1.2;
+	double gWanderRadius = 1.2;
 
 	//the distance the wander circle is projected in front of the angent
-	const double gWanderDistance = 2.0;
+	double gWanderDistance = 2.0;
 
 	//the maximium amount of displacement along the circle each frame
-	const double gWanderJitterPerSec = 80.0;
+	double gWanderJitterPerSec = 80.0;
 
 	//used in path following
-	const double gWaypointSeekDistance = 20.0;
+	double gWaypointSeekDistance = 20.0;
 
 
 	class SteeringBehavior
@@ -108,22 +108,22 @@ namespace ait
 		Vector2D<double> Flee(Vector2D<double> targetPos);
 		Vector2D<double> Arrive(Vector2D<double> targetPos, Deceleration deceleration);
 		Vector2D<double> Pursuit(Vehicle *evader);
-		Vector2D<double> OffsetPursuit(const Vehicle *agent, const Vector2D<double> offset);
-		Vector2D<double> Evade(const Vehicle *agent);
+		Vector2D<double> OffsetPursuit(Vehicle *agent, Vector2D<double> offset);
+		Vector2D<double> Evade(Vehicle *agent);
 		Vector2D<double> Wander();
-		Vector2D<double> ObstacleAvoidance(const std::vector<Entity*> &obstacles);
-		Vector2D<double> WallAvoidance(const std::vector<Wall2D> &walls);
+		Vector2D<double> ObstacleAvoidance(std::vector<Entity*> &obstacles);
+		Vector2D<double> WallAvoidance(std::vector<Wall2D> &walls);
 		Vector2D<double> FollowPath();
-		Vector2D<double> Interpose(const Vehicle *vehicleA, const Vehicle *vehicleB);
-		Vector2D<double> Hide(const Vehicle *hunter, const std::vector<Entity*> &obstacles);
+		Vector2D<double> Interpose(Vehicle *vehicleA, Vehicle *vehicleB);
+		Vector2D<double> Hide(Vehicle *hunter, std::vector<Entity*> &obstacles);
 
-		Vector2D<double> Cohesion(const std::vector<Vehicle*> &agents);
-		Vector2D<double> Separation(const std::vector<Vehicle*> &agents);
-		Vector2D<double> Alignment(const std::vector<Vehicle*> &agents);
+		Vector2D<double> Cohesion(std::vector<Vehicle*> &agents);
+		Vector2D<double> Separation(std::vector<Vehicle*> &agents);
+		Vector2D<double> Alignment(std::vector<Vehicle*> &agents);
 
-		Vector2D<double> CohesionPlus(const std::vector<Vehicle*> &agents);
-		Vector2D<double> SeparationPlus(const std::vector<Vehicle*> &agents);
-		Vector2D<double> AlignmentPlus(const std::vector<Vehicle*> &agents);
+		Vector2D<double> CohesionPlus(std::vector<Vehicle*> &agents);
+		Vector2D<double> SeparationPlus(std::vector<Vehicle*> &agents);
+		Vector2D<double> AlignmentPlus(std::vector<Vehicle*> &agents);
 	};
 };
 

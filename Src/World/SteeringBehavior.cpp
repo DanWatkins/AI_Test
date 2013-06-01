@@ -64,7 +64,7 @@ namespace ait
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Flee(Vector2D<double> targetPos)
 	{
-		const double panicDistanceSq = 100.0 * 100.0;
+		double panicDistanceSq = 100.0 * 100.0;
 
 		//return no steering force if the target is out of the panic distance
 		if (mVehicle->GetPos().DistanceToSq(targetPos) > panicDistanceSq)
@@ -89,7 +89,7 @@ namespace ait
 
 		if (distance > 0)
 		{
-			const double decelerationTweaker = 0.3;
+			double decelerationTweaker = 0.3;
 			double speed = distance / ((double)deceleration * decelerationTweaker);
 			speed = Min(speed, mVehicle->GetMaxSpeed());
 
@@ -122,16 +122,31 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::OffsetPursuit(const Vehicle *agent, const Vector2D<double> offset)
+	Vector2D<double> SteeringBehavior::OffsetPursuit(Vehicle *agent, Vector2D<double> offset)
 	{
+		Vector2D<double> worldOffsetPos = PointToWorldSpace(offset, agent->GetHeading(), agent->GetSide(), agent->GetPos());
+		Vector2D<double> toOffset = worldOffsetPos - mVehicle->GetPos();
+
+		double lookAheadTime = toOffset.Length() / (mVehicle->GetMaxSpeed() + agent->GetSpeed());
+
+		return Arrive(worldOffsetPos + agent->GetVelocity() * lookAheadTime, Deceleration::Fast);
 	}
 
 
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Evade(const Vehicle *agent)
+	Vector2D<double> SteeringBehavior::Evade(Vehicle *agent)
 	{
+		Vector2D<double> toPursuer = agent->GetPos() - mVehicle->GetPos();
+
+		const double threatRange = 100.0;
+		if (toPursuer.LengthSq() > threatRange*threatRange)
+			return Vector2D<double>();
+
+		double lookAheadTime = toPursuer.Length() / (mVehicle->GetMaxSpeed() + agent->GetSpeed());
+
+		return Flee(agent->GetPos() + agent->GetVelocity() * lookAheadTime);
 	}
 
 
@@ -140,13 +155,14 @@ namespace ait
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Wander()
 	{
+		
 	}
 
 
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::ObstacleAvoidance(const std::vector<Entity*> &obstacles)
+	Vector2D<double> SteeringBehavior::ObstacleAvoidance(std::vector<Entity*> &obstacles)
 	{
 	}
 
@@ -154,7 +170,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::WallAvoidance(const std::vector<Wall2D> &walls)
+	Vector2D<double> SteeringBehavior::WallAvoidance(std::vector<Wall2D> &walls)
 	{
 	}
 
@@ -170,7 +186,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Interpose(const Vehicle *vehicleA, const Vehicle *vehicleB)
+	Vector2D<double> SteeringBehavior::Interpose(Vehicle *vehicleA, Vehicle *vehicleB)
 	{
 	}
 
@@ -178,7 +194,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Hide(const Vehicle *hunter, const std::vector<Entity*> &obstacles)
+	Vector2D<double> SteeringBehavior::Hide(Vehicle *hunter, std::vector<Entity*> &obstacles)
 	{
 	}
 	
@@ -186,7 +202,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Cohesion(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::Cohesion(std::vector<Vehicle*> &agents)
 	{
 	}
 
@@ -194,7 +210,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Separation(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::Separation(std::vector<Vehicle*> &agents)
 	{
 	}
 
@@ -202,7 +218,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::Alignment(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::Alignment(std::vector<Vehicle*> &agents)
 	{
 	}
 
@@ -210,7 +226,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::CohesionPlus(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::CohesionPlus(std::vector<Vehicle*> &agents)
 	{
 	}
 
@@ -218,7 +234,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::SeparationPlus(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::SeparationPlus(std::vector<Vehicle*> &agents)
 	{
 	}
 
@@ -226,7 +242,7 @@ namespace ait
 	/*=============================================================================
 	-- 
 	=============================================================================*/
-	Vector2D<double> SteeringBehavior::AlignmentPlus(const std::vector<Vehicle*> &agents)
+	Vector2D<double> SteeringBehavior::AlignmentPlus(std::vector<Vehicle*> &agents)
 	{
 	}
 };
