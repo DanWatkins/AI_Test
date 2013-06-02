@@ -101,6 +101,7 @@
     <ClInclude Include="..\..\Src\Utility\Geometry.h" />
     <ClInclude Include="..\..\Src\Utility\InvertedAABBox2D.h" />
     <ClInclude Include="..\..\Src\Utility\MatrixC2D.h" />
+    <ClInclude Include="..\..\Src\Utility\ParamLoader.h" />
     <ClInclude Include="..\..\Src\Utility\Path.h" />
     <ClInclude Include="..\..\Src\Utility\Transformation.h" />
     <ClInclude Include="..\..\Src\Utility\Vector2D.h" />
@@ -124,6 +125,7 @@
     <ClCompile Include="..\..\Src\System\Utility.cpp" />
     <ClCompile Include="..\..\Src\System\Window.cpp" />
     <ClCompile Include="..\..\Src\Utility\MatrixC2D.cpp" />
+    <ClCompile Include="..\..\Src\Utility\ParamLoader.cpp" />
     <ClCompile Include="..\..\Src\Utility\Path.cpp" />
     <ClCompile Include="..\..\Src\Utility\Transformation.cpp" />
     <ClCompile Include="..\..\Src\Utility\Wall2D.cpp" />

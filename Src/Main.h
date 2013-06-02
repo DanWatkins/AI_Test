@@ -52,6 +52,7 @@ namespace ait
 #include "Utility\Geometry.h"
 #include "Utility\Wall2D.h"
 #include "Utility\InvertedAABBox2D.h"
+#include "Utility\ParamLoader.h"
 
 #include "System\VideoSettings.h"
 #include "System\Input.h"
