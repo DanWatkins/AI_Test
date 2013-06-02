@@ -173,7 +173,16 @@ namespace ait
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::Wander()
 	{
-		
+		double jitterThisTimeSlice = mWanderJitter * mVehicle->GetTimeElapsed();
+
+		mWanderTarget += Vector2D<double>(RandClamped() * jitterThisTimeSlice, RandClamped() * jitterThisTimeSlice);
+		mWanderTarget.Normalize();
+		mWanderTarget *= mWanderRadius;
+
+		Vector2D<double> target = mWanderTarget + Vector2D<double>(mWanderDistance, 0.0);
+		Vector2D<double> targetWorldSpace = PointToWorldSpace(target, mVehicle->GetHeading(), mVehicle->GetSide(), mVehicle->GetPos());
+
+		return targetWorldSpace - mVehicle->GetPos();
 	}
 
 
@@ -182,6 +191,7 @@ namespace ait
 	=============================================================================*/
 	Vector2D<double> SteeringBehavior::ObstacleAvoidance(std::vector<Entity*> &obstacles)
 	{
+
 	}
 
 
