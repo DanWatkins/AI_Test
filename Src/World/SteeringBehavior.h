@@ -68,7 +68,7 @@ namespace ait
 
 		//multipliers that effect the strength of the appropriate behavior
 		double mWeightSeparation;
-		double mWidthCohesion;
+		double mWeightCohesion;
 		double mWeightAlignment;
 		double mWeightWander;
 		double mWeightObstacleAvoidance;
@@ -139,6 +139,7 @@ namespace ait
 		Vector2D<double> Calculate();
 
 		double ForwardComponent();
+		double SideComponent();
 	};
 };
 

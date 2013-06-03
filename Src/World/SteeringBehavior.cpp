@@ -2,21 +2,95 @@
 
 namespace ait
 {
-	SteeringBehavior::SteeringBehavior(Vehicle *agent)
+	SteeringBehavior::SteeringBehavior(Vehicle *agent) : mFeelers(3)
 	{
+		mVehicle = agent;
+		mFlags = 0;
+		mBoxLength = Prm.MinDetectionBoxLength;
+		mWeightCohesion = Prm.CohesionWeight;
+		mWeightAlignment = Prm.AlignmentWeight;
+		mWeightSeparation = Prm.SeparationWeight;
+		mWeightObstacleAvoidance = Prm.ObstacleAvoidanceWeight;
+		mWeightWander = Prm.WanderWeight;
+		mWeightWallAvoidance = Prm.WallAvoidanceWeight;
+		mViewDistance = Prm.ViewDistance;
+		mWallDetectionFeelerLength = Prm.WallDetectionFeelerLength;
+        mDeceleration = Normal,
+        mTargetAgent1 = NULL;
+        mTargetAgent2 = NULL,
+        mWanderDistance = gWanderDistance;
+        mWanderJitter = gWanderJitterPerSec;
+        mWanderRadius = gWanderRadius;
+        mWaypointSeekDistanceSq = gWaypointSeekDistance*gWaypointSeekDistance;
+        mWeightSeek = Prm.SeekWeight;
+        mWeightFlee = Prm.FleeWeight;
+        mWeightArrive = Prm.ArriveWeight;
+        mWeightPursuit = Prm.PursuitWeight;
+        mWeightOffsetPursuit = Prm.OffsetPursuitWeight;
+        mWeightInterpose = Prm.InterposeWeight;
+        mWeightHide = Prm.HideWeight;
+        mWeightEvade = Prm.EvadeWeight;
+        mWeightFollowPath = Prm.FollowPathWeight;
+        mCellSpaceOn = false;
+        mSummingMethod = Prioritized;
+
+		double theta = RandFloat() * TWO_PI;
+		mWanderTarget = Vector2D<double>(mWanderRadius * cos(theta), mWanderRadius * sin(theta));
+		mPath = new Path();
+		mPath->SetLooped(true);
 	}
 
 
 	SteeringBehavior::~SteeringBehavior()
 	{
+		delete mPath;
 	}
 
 	Vector2D<double> SteeringBehavior::Calculate()
 	{
+		mSteeringForce.Zero();
+
+		if (!mCellSpaceOn)
+		{
+			if (On(BehaviorSeparation) || On(BehaviorAllignment) || On(BehaviorCohesion))
+				int n=0;
+				// TODO uncomment when World is finished mVehicle->GetWorld()->TagVehiclesWithingViewRange(mVehicle, mViewDistance);
+		}
+		else
+		{
+			if (On(BehaviorSeparation) || On(BehaviorAllignment) || On(BehaviorCohesion))
+				int n=0;
+				// TODO uncomment when World is finished mVehicle->GetWorld()->CellSpace()->CalculateNeighbors(mVehicle->GetPos(), mViewDistance);
+		}
+
+		switch (mSummingMethod)
+		{
+		case WeightedAverage:
+			mSteeringForce = CalculateWeightedSum(); break;
+
+		case Prioritized:
+			mSteeringForce = CalculatePrioritized(); break;
+
+		case Dithered:
+			mSteeringForce = CalculateDithered(); break;
+
+		default:
+			mSteeringForce = Vector2D<double>(0.0,0.0);
+		}
+
+		return mSteeringForce;
 	}
+
 
 	double SteeringBehavior::ForwardComponent()
 	{
+		return mVehicle->GetHeading().DotProduct(mSteeringForce);
+	}
+
+
+	double SteeringBehavior::SideComponent()
+	{
+		return mVehicle->GetSide().DotProduct(mSteeringForce);
 	}
 
 
